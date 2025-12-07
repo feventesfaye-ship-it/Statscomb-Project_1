@@ -280,7 +280,6 @@ print(" - Heatmap summarizes where Olmo is most active on the pitch.")
 event_types = olmo_events['type'].apply(lambda e: safe_get(e, 'name') if isinstance(e, dict) else None)
 print(event_types.value_counts())
 
-pip install streamlit pandas matplotlib seaborn
 
 # save this as app.py
 import streamlit as st
